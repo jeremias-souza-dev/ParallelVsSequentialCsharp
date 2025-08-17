@@ -1,4 +1,4 @@
-# ParallelVsSequential
+# Parallel Vs Sequential
 
 Este projeto foi criado para demonstrar e comparar a **programação sequencial** versus a **programação paralela** em C#.  
 
