@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8E68579B-ED9E-47BF-98C8-61A88F90B639}</ProjectGuid>
+    <ProjectGuid>{8983D093-070C-4A2E-AB39-2D20AB84945F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleApp1</RootNamespace>
     <AssemblyName>ConsoleApp1</AssemblyName>
@@ -49,11 +49,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-<<<<<<< HEAD
-  <ItemGroup>
-    <Content Include="Captura de tela 2025-08-17 103119.png" />
-  </ItemGroup>
-=======
->>>>>>> e8870250e84f1494df1cdabb6c59573c927d90b9
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
