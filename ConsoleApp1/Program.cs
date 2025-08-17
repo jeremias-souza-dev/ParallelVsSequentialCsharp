@@ -56,10 +56,19 @@ namespace ConsoleApp1 {
 
                 Console.WriteLine();
                 Console.WriteLine("\n=== RESULTADOS ===");
-                Console.WriteLine($"[Sequencial] Tempo total: {swSeq.ElapsedMilliseconds} ms ({swSeq.Elapsed.TotalSeconds:F2} s)");
+
+                string FormatTempo(TimeSpan ts) {
+                    if (ts.TotalHours >= 1)
+                        return $"{(int)ts.TotalHours}h {ts.Minutes}m {ts.Seconds}s";
+                    if (ts.TotalMinutes >= 1)
+                        return $"{ts.Minutes}m {ts.Seconds}s";
+                    return $"{ts.Seconds}s";
+                }
+
+                Console.WriteLine($"[Sequencial] Tempo total: {swSeq.ElapsedMilliseconds} ms ({FormatTempo(swSeq.Elapsed)})");
                 Console.WriteLine($"[Sequencial] Total de threads distintas: {threadIdsSeq.Count}");
                 Console.WriteLine();
-                Console.WriteLine($"[Paralelo] Tempo total: {swPar.ElapsedMilliseconds} ms ({swPar.Elapsed.TotalSeconds:F2} s)");
+                Console.WriteLine($"[Paralelo] Tempo total: {swPar.ElapsedMilliseconds} ms ({FormatTempo(swPar.Elapsed)})");
                 Console.WriteLine($"[Paralelo] Total de threads distintas: {threadIdsPar.Count}");
                 Console.WriteLine();
 
