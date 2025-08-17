@@ -49,8 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Content Include="Captura de tela 2025-08-17 103119.png" />
   </ItemGroup>
+=======
+>>>>>>> e8870250e84f1494df1cdabb6c59573c927d90b9
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
