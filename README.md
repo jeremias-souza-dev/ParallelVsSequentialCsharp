@@ -17,3 +17,9 @@ O objetivo é ajudar **pessoas que têm dúvidas sobre como funciona a programa�
 1. Clone este repositório:
    ```bash
    git clone https://github.com/jeremias-souza-dev/ParallelVsSequentialCsharp.git
+
+## Captura de Tela
+
+Veja uma captura de tela do aplicativo em funcionamento:
+
+![Captura de Tela](Captura%20de%20tela%202025-08-17%20103119.png)
